@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MY NOTES</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="start_typing">Start Typing</string>
+    <string name="add">ADD</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="empty_notes">Empty Notes !</string>
+    <string name="nothing_found">Nothing Found!</string>
+    <string name="create_a_note">Create A Note!</string>
+    <string name="keep_notes">Keep Notes</string>
+    <string name="search">Search</string>
+</resources>

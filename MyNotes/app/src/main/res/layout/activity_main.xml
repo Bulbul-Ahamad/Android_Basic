@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="visible"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="7dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#FFC107">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:background="?attr/colorOnPrimary"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/toolbar">
+<!--                <androidx.appcompat.widget.SearchView-->
+<!--                    android:id="@+id/searchView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:outlineSpotShadowColor="#FFC107"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:queryHint="Search Here...."-->
+<!--                    app:iconifiedByDefault="false"-->
+<!--                    tools:targetApi="p" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/toolbarText"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/keep_notes"
+                    android:textColor="#FFC107"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/recyclerNotes"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noNotes"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/amarante"
+            android:text="@string/empty_notes"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/alegreya_sans_sc_thin"
+            android:text="@string/nothing_found"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCreateNote"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/create_a_note"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFC107" />
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16sp"
+        android:backgroundTint="#FFC107"
+        android:layout_marginRight="16sp"
+        android:src="@android:drawable/ic_input_add"
+        android:id="@+id/fabAdd"
+        android:contentDescription="btnFabAdd"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16sp"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>

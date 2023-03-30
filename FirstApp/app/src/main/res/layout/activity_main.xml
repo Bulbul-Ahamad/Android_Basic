@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#80549352"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="@string/content"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"
+        tools:ignore="ImageContrastCheck" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textSize="16dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_margin="11dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="12"
+        android:hint="Enter Your Name"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#004D40" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#363536"
+        android:layout_marginTop="11dp"
+        android:textColor="#fff"
+        android:text="Contact Us"
+        />
+
+</LinearLayout>
